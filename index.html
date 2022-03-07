@@ -23,8 +23,29 @@
       <p>section</p>
       <article>
         <p>article</p>
-        <button>button</button>
+        <div>
+          <p>button</p>
+        </div>
       </article>
     </section>
+
+    <select name="propagation" id="propagation">
+      <option value="none">none</option>
+      <option value="body">body</option>
+      <option value="section">section</option>
+      <option value="article">article</option>
+      <option value="button">button</option>
+    </select>
+    <div>stop propagation at</div>
+    <select name="abort-at" id="abort-at">
+      <option value="none">none</option>
+      <option value="body">body</option>
+      <option value="section">section</option>
+      <option value="article">article</option>
+      <option value="button">button</option>
+    </select>
+    <div>abort at</div>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

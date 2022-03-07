@@ -47,7 +47,11 @@ p {
 
   color: black;
 }
-button {
+article div {
+  @include flex-center();
+
+  position: relative;
+
   height: 80px;
   width: 150px;
 
@@ -55,4 +59,53 @@ button {
 
   background-color: rgb(153, 245, 245);
   border: none;
+
+  > p {
+    position: initial;
+  }
+}
+select {
+  position: absolute;
+
+  width: 150px;
+  padding: 10px;
+
+  font-size: 30px;
+  text-align: left;
+
+  border: none;
+
+  + div {
+    position: absolute;
+
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+  }
+  &#propagation {
+    top: 40px;
+    right: 180px;
+
+    background-color: khaki;
+
+    + div {
+      top: 10px;
+      right: 170px;
+
+      width: 170px;
+    }
+  }
+  &#abort-at {
+    top: 40px;
+    right: 10px;
+
+    background-color: teal;
+
+    + div {
+      top: 10px;
+      right: 15px;
+
+      width: 150px;
+    }
+  }
 }
